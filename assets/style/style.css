@@ -46,11 +46,11 @@ h2{
     font-weight: 500;
 }
 div .pick{
-    height: 400px;
+    height: 100%;
     width: 100%;
 }
-div #twelve-buttons{
-    height: 300px;
+div .picktwo{
+    height: 100%;
     width: 100%;
 }
 
@@ -58,23 +58,67 @@ div #twelve-buttons{
 
 .pick div {
     margin: 5% 10%;
-    height: 300px;
+    height: 100%;
 }
 #fifty-buttons{
     display: inline-block;
     text-align: center;
     vertical-align: middle;
-    padding: 0.25rem 0.5rem;
-    font-size: .875rem;
 }
 
 #fifty-buttons button {
     margin: 4px;
     border-radius: unset;
-    border: 1px solid #f29793;
+    border: 2px solid #f29793;
     background: #ffffff;
     color: #e83d30;
     font-weight: 900;
     line-height: 1.5;
     width: 35px;
 }
+.picktwo div{
+    margin: 5% 10%;
+    height: 100%;
+    
+}
+#twelve-buttons{
+    display: flex;
+    text-align: center;
+    vertical-align: middle;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#twelve-buttons button{
+    margin: 4px;
+    border-radius: unset;
+    border: 2px solid #f29793;
+    background: #ffffff;
+    color: #e83d30;
+    font-weight: 900;
+    line-height: 1.5;
+    width: 35px;
+}
+
+/*Submit button*/
+.submit-button{
+    text-align: center;
+}
+.submit-button button{
+    border: 1px solid;
+    border-radius: 5%;
+    background-color: rgba(202,162,70,1);
+    text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000, 0.5px 0.5px 0 #000;
+    width: auto;
+    margin: 2px;
+    padding: 10px;
+    color: #806956;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    font-weight: bolder;
+}
+.submit-button button:hover{
+    background-color: rgba(202,162,70,0.7);
+}
+
+/*-webkit-transition: color .15s ease-in-out,background-color .30s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;*/
