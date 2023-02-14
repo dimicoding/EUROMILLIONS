@@ -1,0 +1,80 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;500;700&display=swap');
+
+
+
+/*Heading*/
+
+body{
+    background: rgb(32,46,99);
+}
+.heading{
+    text-align: center;
+    margin-top: 5%;
+}
+.fa-regular.fa-star{
+    color: rgba(202,162,70,255);
+}
+.heading h1{
+    font-family:  'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size: 70px;
+    text-shadow: -1px -1px 0 #000, 5px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    color: rgb(254 254 252);
+}
+.heading :hover{
+    text-shadow: -1px -1px 0 #CAA246, 1px -1px 0 #CAA246, -1px 1px 0 #CAA246, 1px 1px 0 #CAA246;
+    color: rgb(254 254 252);
+}
+
+/*Structure for the Euromillion buttons*/
+
+.structure {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    margin: 0 25% 0 25%;
+    background: #ffffff;
+    border-radius: 15px;
+}
+h2{
+    text-align: center;
+    color: #806956;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+}
+div .pick{
+    height: 400px;
+    width: 100%;
+}
+div #twelve-buttons{
+    height: 300px;
+    width: 100%;
+}
+
+/*Inside structure- Buttons style*/
+
+.pick div {
+    margin: 5% 10%;
+    height: 300px;
+}
+#fifty-buttons{
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0.25rem 0.5rem;
+    font-size: .875rem;
+}
+
+#fifty-buttons button {
+    margin: 4px;
+    border-radius: unset;
+    border: 1px solid #f29793;
+    background: #ffffff;
+    color: #e83d30;
+    font-weight: 900;
+    line-height: 1.5;
+    width: 35px;
+}
