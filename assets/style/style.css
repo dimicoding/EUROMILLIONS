@@ -1,31 +1,92 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;500;700&display=swap');
 
 
 
 /*Heading*/
 
-body{
-    background: rgb(32,46,99);
+body {
+    background: rgb(32, 46, 99);
 }
-.heading{
+
+.heading {
     text-align: center;
     margin-top: 5%;
 }
-.fa-regular.fa-star{
-    color: rgba(202,162,70,255);
+
+.fa-regular.fa-star {
+    color: rgba(202, 162, 70, 255);
 }
-.heading h1{
-    font-family:  'Josefin Sans', sans-serif;
+
+.heading h1 {
+    font-family: 'Josefin Sans', sans-serif;
     font-weight: 700;
     font-size: 70px;
     text-shadow: -1px -1px 0 #000, 5px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     color: rgb(254 254 252);
 }
-.heading :hover{
+
+.heading :hover {
     text-shadow: -1px -1px 0 #CAA246, 1px -1px 0 #CAA246, -1px 1px 0 #CAA246, 1px 1px 0 #CAA246;
     color: rgb(254 254 252);
 }
+
+/* Boxes for User Inputs and Correct Answer*/
+#user-input {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#user-input input {
+    color: #806956;
+    height: 30px;
+    width: 40px;
+    font-size: 1.2rem;
+    margin: 20px 2px 20px;
+    text-align: center;
+}
+#user-input h3 {
+    margin-right: 30px;
+    color: rgb(202, 162, 70);
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#correct-answer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#correct-answer input {
+    color: #806956;
+    height: 30px;
+    width: 40px;
+    font-size: 1.2rem;
+    margin: 20px 2px 20px;
+    text-align: center;
+
+}
+#correct-answer h3 {
+    margin-right: 7px;
+    color: rgb(202, 162, 70);
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.vertical-line {
+    border-left: 2px solid #f29793;
+    height: 35px;
+    margin: 0 5px 0 5px;
+}
+
+
+
+
 
 /*Structure for the Euromillion buttons*/
 
@@ -39,17 +100,20 @@ body{
     background: #ffffff;
     border-radius: 15px;
 }
-h2{
+
+h2 {
     text-align: center;
     color: #806956;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 500;
 }
-div .pick{
+
+div .pick {
     height: 100%;
     width: 100%;
 }
-div .picktwo{
+
+div .picktwo {
     height: 100%;
     width: 100%;
 }
@@ -60,7 +124,8 @@ div .picktwo{
     margin: 5% 10%;
     height: 100%;
 }
-#fifty-buttons{
+
+#fifty-buttons {
     display: inline-block;
     text-align: center;
     vertical-align: middle;
@@ -76,19 +141,22 @@ div .picktwo{
     line-height: 1.5;
     width: 35px;
 }
-.picktwo div{
+
+.picktwo div {
     margin: 5% 10%;
     height: 100%;
-    
+
 }
-#twelve-buttons{
+
+#twelve-buttons {
     display: flex;
     text-align: center;
     vertical-align: middle;
     flex-wrap: wrap;
     justify-content: center;
 }
-#twelve-buttons button{
+
+#twelve-buttons button {
     margin: 4px;
     border-radius: unset;
     border: 2px solid #f29793;
@@ -100,13 +168,14 @@ div .picktwo{
 }
 
 /*Submit button*/
-.submit-button{
+.submit-button {
     text-align: center;
 }
-.submit-button button{
+
+.submit-button button {
     border: 1px solid;
     border-radius: 5%;
-    background-color: rgba(202,162,70,1);
+    background-color: rgba(202, 162, 70, 1);
     text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000, 0.5px 0.5px 0 #000;
     width: auto;
     margin: 2px;
@@ -117,8 +186,9 @@ div .picktwo{
     font-size: 16px;
     font-weight: bolder;
 }
-.submit-button button:hover{
-    background-color: rgba(202,162,70,0.7);
+
+.submit-button button:hover {
+    background-color: rgba(202, 162, 70, 0.7);
 }
 
 /*-webkit-transition: color .15s ease-in-out,background-color .30s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;*/
