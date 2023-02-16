@@ -14,7 +14,7 @@ for (let i = 1; i <= 50; i++) {
 let selectedButtons = document.querySelectorAll('#fifty-buttons button');
 let inputBox = document.querySelectorAll('input[type="text"]');
 let maxActiveButtons = 5;
-let selectedValues= [];
+let selectedValues = [];
 
 selectedButtons.forEach(button => {
     button.addEventListener('click', () => {
@@ -22,17 +22,17 @@ selectedButtons.forEach(button => {
         if (activeButtons.length === maxActiveButtons) {
             return;
         }
-        if (selectedValues.includes(button.textContent)){
+        if (selectedValues.includes(button.textContent)) {
             return;
         }
         button.classList.add('active');
-        button.style.backgroundColor= "yellow";
+        button.style.backgroundColor = "yellow";
         for (let i = 0; i < inputBox.length; i++) {
             if (inputBox[i].value === '') {
                 inputBox[i].value = button.textContent;
                 selectedValues.push(button.textContent);
                 break;
-            }   
+            }
         }
     });
 });
@@ -43,20 +43,33 @@ selectedButtons.forEach(button => {
  * without repeating on different input boxes
  */
 let correctAnswer = document.querySelectorAll("#correct-answer input");
-let randomNumbers = [];
+let submitButton= document.getElementById("submit-button");
 
-while (randomNumbers.length < 5) {
-    let randomNumber = Math.floor(Math.random() * 50) + 1;
-    if (!randomNumbers.includes(randomNumber)) {
-        randomNumbers.push(randomNumber);
-    }
-}
 for (let i = 0; i < correctAnswer.length; i++) {
-    correctAnswer[i].value = randomNumbers[i];
+    correctAnswer[i].value = "";
 }
+
+submitButton.addEventListener('click', function () {
+    if (this.getAttribute("data-type") === "submit") {
+        let randomNumbers = [];
+        while (randomNumbers.length < 5) {
+            let randomNumber = Math.floor(Math.random() * 50) + 1;
+            if (!randomNumbers.includes(randomNumber)) {
+                randomNumbers.push(randomNumber);
+            }
+        }
+        for (let i = 0; i < correctAnswer.length; i++) {
+            correctAnswer[i].value = randomNumbers[i];
+        }
+    }
+});
+
 
 /**Create Cheack answer function
  * compare random number value with isers-input
  * make the function work afre the user clicks on the button
  */
 
+function checkAnswers() {
+    let userAnswer = inputBox.value
+}
