@@ -73,3 +73,32 @@ submitButton.addEventListener('click', function () {
 function checkAnswers() {
     let userAnswer = inputBox.value
 }
+
+
+
+
+/*Create a countdown reverse clock "jackpot" updating every week */
+let days= document.getElementById("day");
+let hours= document.getElementById("hour");
+let minutes= document.getElementById("minute");
+let seconds= document.getElementById("second");
+    
+let jackpot= new Date("2023-12-24").getTime();
+let reverse= setInterval(() => {
+    let now = new Date().getTime();
+    let timeLeft = jackpot - now;
+
+    if(timeLeft < 0){
+        jackpot.setFullYear(jackpot.getFullYear()+ 1);
+        timeLeft= jackpot - now; 
+    }
+    let day= Math.floor(timeLeft / (1000 * 60 *60 *24));
+    let hour= Math.floor((timeLeft % (1000 * 60 *60 *24)) / (1000 *60 *60));
+    let minute= Math.floor((timeLeft % (1000 * 60 *60)) / (1000 *60));
+    let second= Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+    days.value= day + " d";
+    hours.value= hour + " hrs";
+    minutes.value= minute + " min";
+    seconds.value= second + " sec";
+}, 1000);

@@ -29,6 +29,59 @@ body {
     text-shadow: -1px -1px 0 #CAA246, 1px -1px 0 #CAA246, -1px 1px 0 #CAA246, 1px 1px 0 #CAA246;
     color: rgb(254 254 252);
 }
+/*Style Countdown Clock*/
+.timer{
+    background-image: url(../images/pexels-waldemar-5550130.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: -90px;
+    height: 150px;
+}
+#day{
+    color: #e83d30;
+    font-weight: bold;
+    height: 50px;
+    width: 50px;
+    font-size: 1rem;
+    margin: 20px 2px 20px;
+    text-align: center;
+    border-radius: 50%;
+    border: 2px solid #f29793;
+}
+#hour{
+    color: #e83d30;
+    font-weight: bold;
+    height: 50px;
+    width: 50px;
+    font-size: 1rem;
+    margin: 20px 2px 20px;
+    text-align: center;
+    border-radius: 50%;
+    border: 2px solid #f29793;
+}
+#minute{
+    color: #e83d30;
+    font-weight: bold;
+    height: 50px;
+    width: 50px;
+    font-size: 1rem;
+    margin: 20px 2px 20px;
+    text-align: center;
+    border-radius: 50%;
+    border: 2px solid #f29793;
+}
+#second{
+    color: #e83d30;
+    font-weight: bold;
+    height: 50px;
+    width: 50px;
+    font-size: 1rem;
+    margin: 20px 2px 20px;
+    text-align: center;
+    border-radius: 50%;
+    border: 2px solid #f29793;
+}
+
 
 /* Boxes for User Inputs and Correct Answer*/
 #user-input {
@@ -106,7 +159,7 @@ body {
     border-radius: 15px;
 }
 
-h2 {
+.pick h2 {
     text-align: center;
     color: #806956;
     font-family: 'Josefin Sans', sans-serif;
