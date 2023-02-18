@@ -12,6 +12,14 @@ body {
     text-align: center;
     margin-top: 5%;
 }
+.timer h2 {
+    display: inline-block;
+    color: #936124;
+    text-transform: UPPERCASE;
+    font-family: 'Josefin Sans', sans-serif;
+    text-shadow: -1px -1px 0 #000, 2px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-size: 30px;
+}
 
 .fa-regular.fa-star {
     color: rgba(202, 162, 70, 255);
@@ -24,6 +32,15 @@ body {
     text-shadow: -1px -1px 0 #000, 5px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     color: rgb(254 254 252);
 }
+.inputs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
 
 .heading :hover {
     text-shadow: -1px -1px 0 #CAA246, 1px -1px 0 #CAA246, -1px 1px 0 #CAA246, 1px 1px 0 #CAA246;
@@ -35,7 +52,14 @@ body {
     background-repeat: no-repeat;
     background-size: 100%;
     background-position-y: -90px;
-    height: 150px;
+    height: 200px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    margin: 0 25% 0 25%;
+    border-radius: 5px;
 }
 #day{
     color: #000000;
@@ -47,7 +71,8 @@ body {
     border-radius: 50%;
     border: 2px solid rgba(202, 162, 70, 0.8);
     background: rgb(255, 255, 255, 0.8);
-    font-family: fantasy;
+    font-family: 'Josefin Sans';
+    pointer-events: none;
 }
 #hour{
     color: #000000;
@@ -59,7 +84,8 @@ body {
     border-radius: 50%;
     border: 2px solid rgba(202, 162, 70, 0.8);
     background: rgb(255, 255, 255, 0.8);
-    font-family: fantasy;
+    font-family: 'Josefin Sans';
+    pointer-events: none;
 }
 #minute{
     color: #000000;
@@ -71,7 +97,8 @@ body {
     border-radius: 50%;
     border: 2px solid rgba(202, 162, 70, 0.8);
     background: rgb(255, 255, 255, 0.8);
-    font-family: fantasy;
+    font-family: 'Josefin Sans';
+    pointer-events: none;
 }
 #second{
     color: #000000;
@@ -83,9 +110,9 @@ body {
     border-radius: 50%;
     border: 2px solid rgba(202, 162, 70, 0.8);
     background: rgb(255, 255, 255, 0.8);
-    font-family: fantasy;
+    font-family: 'Josefin Sans';
+    pointer-events: none;
 }
-
 
 /* Boxes for User Inputs and Correct Answer*/
 #user-input {
@@ -131,10 +158,14 @@ body {
     text-align: center;
 
 }
-#correct-answer h3 {
-    margin-right: 7px;
+#correct-answer-header {
     color: rgb(202, 162, 70);
     font-family: 'Josefin Sans', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    margin: unset;
 }
 
 .vertical-line {
@@ -160,7 +191,7 @@ body {
     align-content: center;
     margin: 0 25% 0 25%;
     background: #ffffff;
-    border-radius: 15px;
+    border-radius: 5px;
 }
 
 .pick h2 {
@@ -239,15 +270,24 @@ div .picktwo {
     border: 1px solid;
     border-radius: 5%;
     background-color: rgba(202, 162, 70, 1);
-    text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000, 0.5px 0.5px 0 #000;
     width: auto;
     margin: 2px;
     padding: 10px;
-    color: #806956;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 500;
     font-size: 16px;
-    font-weight: bolder;
+}
+.reset {
+    text-align: center;
+}
+#reset-button {
+    font-size: 35px;
+    border: unset;
+    background-color: unset;
+    cursor: pointer;
+}
+#reset-button:hover{
+    color: rgba(202, 162, 70, 0.7);
 }
 
 .submit-button button:hover {

@@ -20,28 +20,26 @@
         </div>
     </header>
 
-
-
-    <div class="structure">
-        <div class="timer">
-            <h2>Christmas Jackpot</h2>
+    <div class="timer">
+        <h2>Christmas Jackpot</h2>
+        <div class="inputs">
             <input id="day" type="text">
             <input id="hour" type="text">
             <input id="minute" type="text">
             <input id="second" type="text">
         </div>
-
-        
+    </div>
+    
+    <div class="structure">
         <div id="user-input">
-            <h3>Your Answer:</h3>
             <input type="text">
             <input type="text">
             <input type="text">
             <input type="text">
             <input type="text">
         </div>
+        <h3 id="correct-answer-header">Correct Answer:</h3>
         <div id="correct-answer">
-            <h3>Correct Answer:</h3>
             <input type="text">
             <input type="text">
             <input type="text">
@@ -56,16 +54,18 @@
             </div>
         </div>
 
+
         <div class="submit-button">
             <button id="submit-button" data-type="submit">Try My Luck!</button>
 
         </div>
+        <div class="reset">
+            <button id="reset-button"><i class="fa-solid fa-rotate"></i></button>
+        </div>
+    </div>
     </div>
 
     <footer>
-        <div class="attempts-area">
-            <p class="attempts"> Correct answers <span id="attempts">0</span></p>
-        </div>
 
     </footer>
 

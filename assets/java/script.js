@@ -29,7 +29,7 @@ selectedButtons.forEach(button => {
             return;
         }
         button.classList.add('active');
-        button.style.backgroundColor = "yellow";
+        button.style.backgroundColor = "Khaki";
         for (let i = 0; i < inputBox.length; i++) {
             if (inputBox[i].value === '') {
                 inputBox[i].value = button.textContent;
@@ -85,22 +85,18 @@ function showCorrectAnswer() {
 
         if (selectedNumber === correct[i]) {
             outcome += '<input style="background-color: mediumseagreen" value="' + selectedNumber + '">';
-
+            alert(`Congratulations! You've got the number ${selectedNumber} rigth!` )
         } else {
             outcome += '<input style="background-color: indianred" value="' + selectedNumber + '">';
-        }
+        } 
     }
     document.getElementById("user-input").innerHTML = outcome;
 
     let userInputElement = document.getElementById("user-input");
     userInputElement.innerHTML = '';
     
-    let headingElement = document.createElement('h3');
-    headingElement.textContent = "Your Answer:";
-    userInputElement.appendChild(headingElement);
+    
     userInputElement.innerHTML += outcome;
-
-
 };
 submitButton.addEventListener('click', showCorrectAnswer);
 
@@ -111,6 +107,30 @@ function incrementAttempts() {
     document.getElementById("attempts").innerText = ++oldScore;
 }
 
+
+let reset= document.getElementById("reset-button");
+reset.addEventListener('click', function() {
+
+
+    selectedButtons.forEach(button => {
+        button.classList.remove("active");
+        button.style.backgroundColor = "";
+    });
+    
+    for (let i = 0; i < inputBox.length; i++) {
+        inputBox[i].value = "";
+        inputBox[i].style.backgroundColor = "";
+        inputBox[i].disabled= false;
+    }
+    
+
+    selectedValues = [];
+    for (let i = 0; i < correctAnswer.length; i++) {
+        correctAnswer[i].value = "";
+        
+    }
+ 
+});
 
 
 
