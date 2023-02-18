@@ -99,7 +99,7 @@ body {
 }
 
 #user-input input {
-    color: #806956;
+    color: #000000;
     height: 30px;
     width: 40px;
     font-size: 1.2rem;
@@ -202,6 +202,7 @@ div .picktwo {
     font-weight: 900;
     line-height: 1.5;
     width: 35px;
+    cursor: pointer;
 }
 
 .picktwo div {

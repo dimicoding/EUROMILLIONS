@@ -1,3 +1,6 @@
+alert("Welcome to Euromillions!\nTo test your odds is very simple:\n *   Pick 5 random numbers from 1-50;\n *   'Click' the submit button;\n *   'Click' on retry;\nDon't give! At least until you're a millionaire...")
+
+
 /*Create 50 buttons for html*/
 let fiftyButtons = document.getElementById("fifty-buttons");
 
@@ -12,7 +15,7 @@ for (let i = 1; i <= 50; i++) {
  * dont allow the same button to repeat
  */
 let selectedButtons = document.querySelectorAll('#fifty-buttons button');
-let inputBox = document.querySelectorAll('input[type="text"]');
+let inputBox = document.getElementById('user-input').children;
 let maxActiveButtons = 5;
 let selectedValues = [];
 
@@ -43,62 +46,96 @@ selectedButtons.forEach(button => {
  * without repeating on different input boxes
  */
 let correctAnswer = document.querySelectorAll("#correct-answer input");
-let submitButton= document.getElementById("submit-button");
-
-for (let i = 0; i < correctAnswer.length; i++) {
-    correctAnswer[i].value = "";
-}
+let submitButton = document.getElementById("submit-button");
 
 submitButton.addEventListener('click', function () {
-    if (this.getAttribute("data-type") === "submit") {
-        let randomNumbers = [];
-        while (randomNumbers.length < 5) {
-            let randomNumber = Math.floor(Math.random() * 50) + 1;
-            if (!randomNumbers.includes(randomNumber)) {
-                randomNumbers.push(randomNumber);
-            }
+    for (let i = 0; i < correctAnswer.length; i++) {
+        correctAnswer[i].value = "";
+    }
+
+    let randomNumbers = [];
+    while (randomNumbers.length < 5) {
+        let randomNumber = Math.floor(Math.random() * 50) + 1;
+        if (!randomNumbers.includes(randomNumber)) {
+            randomNumbers.push(randomNumber);
         }
-        for (let i = 0; i < correctAnswer.length; i++) {
-            correctAnswer[i].value = randomNumbers[i];
-        }
+    }
+    for (let i = 0; i < correctAnswer.length; i++) {
+        correctAnswer[i].value = randomNumbers[i];
     }
 });
 
 
 /**Create Cheack answer function
  * compare random number value with isers-input
- * make the function work afre the user clicks on the button
+ * make the function work after the user clicks on the button
  */
+function showCorrectAnswer() {
+    let userAnswer = document.querySelectorAll('#user-input input');
 
-function checkAnswers() {
-    let userAnswer = inputBox.value
+    let correct = [];
+    for (let i = 0; i < correctAnswer.length; i++) {
+        correct.push(parseInt(correctAnswer[i].value));
+
+    }
+
+    let outcome = "";
+    for (let i = 0; i < userAnswer.length; i++) {
+        let selectedNumber = parseInt(userAnswer[i].value);
+
+        if (selectedNumber === correct[i]) {
+            outcome += '<input style="background-color: mediumseagreen" value="' + selectedNumber + '">';
+
+        } else {
+            outcome += '<input style="background-color: indianred" value="' + selectedNumber + '">';
+        }
+    }
+    document.getElementById("user-input").innerHTML = outcome;
+
+    let userInputElement = document.getElementById("user-input");
+    userInputElement.innerHTML = '';
+    
+    let headingElement = document.createElement('h3');
+    headingElement.textContent = "Your Answer:";
+    userInputElement.appendChild(headingElement);
+    userInputElement.innerHTML += outcome;
+
+
+};
+submitButton.addEventListener('click', showCorrectAnswer);
+
+
+//Add number of attempts for every trial to increment.
+function incrementAttempts() {
+    let numberAttempts = parseInt(document.getElementById("attempts").innerText);
+    document.getElementById("attempts").innerText = ++oldScore;
 }
 
 
 
 
 /*Create a countdown reverse clock "jackpot" updating every week */
-let days= document.getElementById("day");
-let hours= document.getElementById("hour");
-let minutes= document.getElementById("minute");
-let seconds= document.getElementById("second");
-    
-let jackpot= new Date("2023-12-24").getTime();
-let reverse= setInterval(() => {
+let days = document.getElementById("day");
+let hours = document.getElementById("hour");
+let minutes = document.getElementById("minute");
+let seconds = document.getElementById("second");
+
+let jackpot = new Date("2023-12-24").getTime();
+let reverse = setInterval(() => {
     let now = new Date().getTime();
     let timeLeft = jackpot - now;
 
-    if(timeLeft < 0){
-        jackpot.setFullYear(jackpot.getFullYear()+ 1);
-        timeLeft= jackpot - now; 
+    if (timeLeft < 0) {
+        jackpot.setFullYear(jackpot.getFullYear() + 1);
+        timeLeft = jackpot - now;
     }
-    let day= Math.floor(timeLeft / (1000 * 60 *60 *24));
-    let hour= Math.floor((timeLeft % (1000 * 60 *60 *24)) / (1000 *60 *60));
-    let minute= Math.floor((timeLeft % (1000 * 60 *60)) / (1000 *60));
-    let second= Math.floor((timeLeft % (1000 * 60)) / 1000);
+    let day = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+    let hour = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    let minute = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+    let second = Math.floor((timeLeft % (1000 * 60)) / 1000);
 
-    days.value= day + " d";
-    hours.value= hour + " hrs";
-    minutes.value= minute + " min";
-    seconds.value= second + " sec";
+    days.value = day + " d";
+    hours.value = hour + " hrs";
+    minutes.value = minute + " min";
+    seconds.value = second + " sec";
 }, 1000);
