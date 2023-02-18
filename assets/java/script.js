@@ -1,4 +1,4 @@
-alert("Welcome to Euromillions!\nTo test your odds is very simple:\n *   Pick 5 random numbers from 1-50;\n *   'Click' the submit button;\n *   'Click' on retry;\nDon't give! At least until you're a millionaire...")
+alert("Welcome to Euromillions!\nTo test your odds is very simple:\n *   Pick your 5 lucky numbers from 1-50;\n *   'Click' on the submit button;\n *   'Click' on retry to start over;\nDon't give! You're almost a millionaire...")
 
 
 /*Create 50 buttons for html*/

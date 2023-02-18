@@ -294,4 +294,168 @@ div .picktwo {
     background-color: rgba(202, 162, 70, 0.7);
 }
 
-/*-webkit-transition: color .15s ease-in-out,background-color .30s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;*/
+@media (min-width: 1281px){
+    .timer{
+        margin: 0 30%;
+        background-position-y: unset;
+    }
+    .structure{
+        margin: 0 30%;
+    }
+    .pick h2{
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px){
+    .timer{
+        margin: 0 20%;
+        background-position-y: unset;
+    }
+    .structure{
+        margin: 0 20%;
+    }
+    .pick div {
+        margin: 5% 15%;
+    }
+    .pick h2{
+        margin-bottom: 0;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .timer{
+        margin: 0 15%;
+        background-position-y: unset;
+        height: 170px;
+    }
+    .timer h2{
+        margin-bottom: 0;
+    }
+    .structure{
+        margin: 0 15%;
+    }
+    .pick div {
+        margin: 5% 12%;
+    }
+    .pick h2{
+        margin-bottom: 0;
+    }
+
+}
+
+
+@media (min-width: 481px) and (max-width: 767px){
+    .heading h1{
+        font-size: 50px;
+    }
+    .timer{
+        margin: 0 5%;
+        background-position-y: unset;
+        height: 140px;
+    }
+    .timer h2{
+        font-size: 25px;
+        margin-bottom: 0;
+    }
+    #day{
+        height: 40px;
+        width: 40px;
+        font-size: 15px;
+    }
+    #hour{
+        height: 40px;
+        width: 40px;
+        font-size: 15px;
+    }
+    #minute{
+        height: 40px;
+        width: 40px;
+        font-size: 15px;
+    }
+    #second{
+        height: 40px;
+        width: 40px;
+        font-size: 15px;
+    }
+    .structure{
+        margin: 0 5%;
+    }
+    #user-input input {
+        height: 25px;
+        width: 30px;
+        font-size: 1rem;
+        margin: 20px 10px 20px;
+    }
+    #correct-answer input {
+        height: 25px;
+        width: 30px;
+        font-size: 1rem;
+        margin: 20px 10px 20px;
+    }
+    .pick div {
+        margin: 5% 5%;
+    }
+    .pick h2{
+        margin-bottom: 0;
+    }
+
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+    .heading h1{
+        font-size: 35px;
+    }
+    .timer{
+        margin: 0 1%;
+        background-position-y: unset;
+        height: 140px;
+    }
+    .timer h2{
+        font-size: 25px;
+        margin-bottom: 0;
+    }
+    #day{
+        height: 40px;
+        width: 40px;
+        font-size: 13px;
+    }
+    #hour{
+        height: 40px;
+        width: 40px;
+        font-size: 13px;
+    }
+    #minute{
+        height: 40px;
+        width: 40px;
+        font-size: 13px;
+    }
+    #second{
+        height: 40px;
+        width: 40px;
+        font-size: 13px;
+    }
+    .structure{
+        margin: 0 1%;
+    }
+    #user-input input {
+        height: 25px;
+        width: 30px;
+        font-size: 1rem;
+        margin: 20px 8px 20px;
+    }
+    #correct-answer input {
+        height: 25px;
+        width: 30px;
+        font-size: 1rem;
+        margin: 20px 8px 20px;
+    }
+    .pick div {
+        margin: 3% 1%;
+    }
+    .pick h2{
+        margin-bottom: 0;
+    }
+
+}
