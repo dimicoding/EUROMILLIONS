@@ -457,5 +457,10 @@ div .picktwo {
     .pick h2{
         margin-bottom: 0;
     }
+    #fifty-buttons button {
+        margin: 6px;
+        width: 45px;
+
+    }
 
 }
