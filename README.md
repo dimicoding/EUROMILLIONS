@@ -49,16 +49,74 @@ Nevertheless, the dream of becoming a millionaire is still a powerful draw for m
 - [Acknowledgments](#acknowledgements)
 
 # UX
-## Target Audience
 
-
-### User Goals
+## User Goals
 - Play a simulation of a classical loterry game.
 - Try to have as much numbers guessed correctly.
 
-### Site Owner Goals
-- Creating a web lottery game. (In the future users can be registered and tickets can be bought directly)
-- The game should be fully responsive to be able to be played on different devices.
+## Site Owner Goals
+- Creating a web version of this lottery game. (In the future users can be registered and tickets can be bought directly)
+- The game should be easily accessesible and be able to be played on different devices.
+- Diferent themes to engage more users to participate.
+
+# User Experience
+
+## Target Audience
+- People who like lottery games.
+- People of all socio-economic backgrounds.
+- People looking for a quick acessment of their luck.
+
+## User Requirements and Expectations
+- Intuitive navigation
+- Easy to play and recieve the outcome.
+- Game with a similar presentation as the classic euromillions game. 
+
+## User Stories
+- As a user, I want to be able to quickly access the numbers, submit the answer and have an imidiate result
+- As a user, the numbers that i pick i want them to change colors and appear somewhere in a input box.
+- As a user, I want to see the correct answer to be able to compare results.
+- As a user, I want to know which results are wrong with a different color.
+- As a user, I want to have big buttons to click on the mobile version. 
+
+## Site Owner Stories
+- As a site owner, besides regular weekly jackpots, I want to engage users by providing big jackpots on special occasions.
+- As a site owner, I'd like to encorage users to try different number combinations to test if they have a slightly more probability of guessing the numbers correctly.
+
+
+## Design
+### Design Choices 
+The game was inspired on EuroMillion's phisical lottery ticket, for this reason the design choices where made to match the original layout of the game.
+
+![Euromilhoes](assets/images/Euromillhoes.png)
+
+### Colour
+- Colours were obtained from the above picture using the image color picker.  [(View website)](https://imagecolorpicker.com/)
+- From the dark blue background and harm yellow star hex colours was created a color pallete.
+### Fonts
+- The Fonts used were trying to match as closely as possible the familiar original fonts of the lottery.
+
+### Structure
+- The structure was designed so that it would appear in the center on different diveces.
+- Contains a similar structure of the buttons and a white background with slithly rounded corners.
+
+## Technologies Used
+
+### Languages
+- HTML
+- CSS
+- JavaScript
+
+### Tools
+- Git
+- GitHub
+- Gitpod
+- Paint
+- Font Awesome
+- Favicon
+- JSHint
+- Lighthouse
+- W3C Markup validation service
+- W3C Jigsaw CSS validation service 
 
 
 <details><summary>ScreenShot- Title</summary>
