@@ -1,7 +1,7 @@
 # EUROMILLIONS
 
 ![Am i Responsive](assets/images/Amiresponsive1.png)
-## [View Website in Github pages](https)
+## [View Website on GitHub pages](https)
 
 Euromillions was first launched on February 7th, and the original participating countries were France, the UK, and Spain. This lottery game is deeply ingrained in Portuguese culture, especially in small towns like the one where I grew up.
 
@@ -14,39 +14,39 @@ Nevertheless, the dream of becoming a millionaire is still a powerful draw for m
 # Table of Contents
 
 - [UX](#ux)
+    - [User Goals](#user-goals)
+    - [Site Owner Goals](#site-owner-goals)
+- [User Experience](#user-experience)
     - [Target Audience](#target-audience)
-    - [Website owner business goals](#website-owner-business-goals)
-    - [User goals](#user-goals)
-        - [New user goals](#new-user-goals)
-        - [Returning user goals](#returning-user-goals)
-        - [Website owner business goals](#website-owner-business-goals)
-    - [Structure of the website](#structure-of-the-website)
-    - [Wireframes](#wireframes)
-    - [Surface](#surface)
-        - [Color](#colors)
-        - [Fonts](#fonts)
-        - [Images](#images)
+    - [User Requirements and Expectations](#user-requirements-and-expectations)
+    - [User Stories](#user-stories)
+    - [Site Owner Stories](#site-owner-stories)
+- [Design](#design)
+    - [Design Choices](#design-choices)
+    - [Colour](#colours)
+    - [Fonts](#fonts)
+    - [Structure](#structure)
+- [Technologies Used](#technologies-used)
+    - [Languages](#languages)
+    - [Tools](#tools)
 - [Features](#features)
-    - [Nav Bar](#navigation-bar)
-    - [The Landing Page](#the-landing-page)
-    - [First Section and Aside](#first-section--recipes-and-aside-section)
-    - [Second Section](#second-section--sneak-peek-into-my-classroom)
-    - [Footer](#footer)
-    - [Recipes page](#recipes-page)
-    - [Life As A Pastry Student](#life-as-a-pastry-student)
-    - [About Page](#about-page)
-    - [Contact Page](#contact)
-- [Features Left to Implement](#features-left-to-implement)
+    - [Header](#header)
+    - [Jackpot Timer](#jackpot-timer)
+    - [User Input and Correct Answer Box](#users-input-and-correct-answer-boxes)
+    - [Numbers](#numbers)
+    - [Submit and Retry Buttons](#submit-and-retry-buttons)
 - [Testing](#testing)
     - [Validator Testing](#validator-testing)
         - [Lighthouse](#lighthouse)
-        - [W3C](#w3c-html)
-        - [Jigsaw](#jigsaw-css)
+        - [W3C HTML Validator](#w3c-html-validator)
+        - [Jigsaw CSS Validator](#jigsaw-css-validator)
+        - [Java Script Validator](#jigsaw-css-validator)
     -[Responsiveness](#responsiveness)
 - [Fixed Bugs](#fixed-bugs)
 - [Deployment](#deployment)
 - [Credits](#credits)
 - [Acknowledgments](#acknowledgements)
+    
 
 # UX
 
@@ -84,29 +84,29 @@ Nevertheless, the dream of becoming a millionaire is still a powerful draw for m
 
 
 ## Design
-### Design Choices 
+## Design Choices 
 The game was inspired by EuroMillion's physical lottery ticket, for this reason, the design choices were made to match the original layout of the game.
 
 ![Euromilhoes](assets/images/Euromillhoes.png)
 
-### Colour
+## Colour
 - Colours were obtained from the above picture using the image color picker.  [(View website)](https://imagecolorpicker.com/)
 - From the dark blue background and harm yellow star hex colors were created as a color palette.
-### Fonts
+## Fonts
 -The fonts used are meant to match the original fonts of the lottery's as closely as possible.
 
-### Structure
+## Structure
 - The structure was designed so that it would appear in the center on different devices.
 - It contains similar buttons and a white background with slightly rounded corners.
 
-## Technologies Used
+# Technologies Used
 
-### Languages
+## Languages
 - HTML
 - CSS
 - JavaScript
 
-### Tools
+## Tools
 - Git
 - GitHub
 - Gitpod
@@ -118,9 +118,9 @@ The game was inspired by EuroMillion's physical lottery ticket, for this reason,
 - W3C Jigsaw CSS validation service 
 - JSHint
 
-## Features
+# Features
 
-### Header
+## Header
 
 - The game logo features a font similar to the original.
 - The text shadow has a hover effect, lighting up to a yellow color.
@@ -130,7 +130,7 @@ The game was inspired by EuroMillion's physical lottery ticket, for this reason,
 </details>
 <br>
 
- ### Jackpot timer
+ ## Jackpot Timer
 - Remaining time for the jackpot happening on Christmas eve 2023.
 - Timer is set to repeat itself after for the next Christmas eve.
 - Background image serves to identify the ticket style of the lottery game.
@@ -140,18 +140,18 @@ The game was inspired by EuroMillion's physical lottery ticket, for this reason,
 </details>
 <br>
 
- ### User's Input and Correct Answer Boxes
+ ## User's Input and Correct Answer Boxes
 - Numbers picked will appear on the first input box line.
 - The user is limited to five numbers only, and each number can only be selected once.
 - The correct answer box shows the correct numbers generated randomly.
-- Correct numbers lighten green and incorrect ones in red
+- Correct numbers are highlighted in green and incorrect ones in red.
 
 <details><summary>ScreenShot-User's Input and Correct Answer Boxes</summary>
 <img src="assets/images/input-boxes.png">
 </details>
 <br>
 
- ### Numbers
+ ## Numbers
 - 5 buttons can be picked out of a total of 50.
 - Numbers picked by the user will turn active with the yellow color.
 
@@ -160,7 +160,7 @@ The game was inspired by EuroMillion's physical lottery ticket, for this reason,
 </details>
 <br>
 
- ### Submit and Retry Buttons
+ ## Submit and Retry Buttons
 - Submit button, named: "Try My Luck!", compares the user's input with randomly generated 5 numbers.
 - The retry button, clears out the user's numbers and the correct answer. Allowing the user to restart a new try.
 
@@ -257,9 +257,16 @@ The live link can be found here -
 
 - Favicon was downloaded from: https://icons8.com/icons/set/favicon-star
 
+- Fonts used from google fonts https://fonts.google.com/
+
+- Code institute's template: https://github.com/Code-Institute-Org/gitpod-full-template
+
+- Media queries range inspired by https://gist.github.com/gokulkrishh/242e68d1ee94ad05f488
+
 - Background image containing the "timer" belongs to Pexels.
 
-- Readme file inspired on: https://github.com/4n4ru/CI-P2-GuessingBee
+- Readme file inspired on: https://github.com/4n4ru/CI-P2-GuessingBee and https://github.com/marcin-kli/MP1/blob/Milestone-Projects/README.md#user-stories-testing .
+
 
 # Acknowledgements
 - To the whole Team at Code Institute.
@@ -267,5 +274,6 @@ The live link can be found here -
 - Thanks to Paul Thomas O’Riordan,  Cohort Facilitator of the weekly SUP for sharing useful tips and material.
 
 
+<br>
 
 [Back To Table of Contents](#table-of-contents)
