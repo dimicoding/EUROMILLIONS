@@ -22,7 +22,7 @@ body {
 }
 
 .fa-regular.fa-star {
-    color: rgba(202, 162, 70, 255);
+    color: rgba(202, 162, 70);
 }
 
 .heading h1 {
@@ -281,10 +281,11 @@ div .picktwo {
     text-align: center;
 }
 #reset-button {
-    font-size: 35px;
+    font-size: 25px;
     border: unset;
     background-color: unset;
     cursor: pointer;
+    color: #806956;
 }
 #reset-button:hover{
     color: rgba(202, 162, 70, 0.7);

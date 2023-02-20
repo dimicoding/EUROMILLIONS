@@ -8,9 +8,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="description" content="Pick 5 numbers and test your luck at this lottery game">
+    <meta name="keywords" content="lottery, luck, EuroMillions">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/style/style.css">
-    <title>Document</title>
+    <title>EuroMillions</title>
 </head>
 
 <body>
@@ -23,28 +25,28 @@
     <div class="timer">
         <h2>Christmas Jackpot</h2>
         <div class="inputs">
-            <input id="day" type="text">
-            <input id="hour" type="text">
-            <input id="minute" type="text">
-            <input id="second" type="text">
+            <input id="day" type="text" aria-label="remaining timer box counting days left">
+            <input id="hour" type="text" aria-label="remaining timer box counting hours left">
+            <input id="minute" type="text" aria-label="remaining timer box counting minutes left">
+            <input id="second" type="text" aria-label="remaining timer box counting seconds left">
         </div>
     </div>
     
     <div class="structure">
         <div id="user-input">
-            <input type="text">
-            <input type="text">
-            <input type="text">
-            <input type="text">
-            <input type="text">
+            <input type="text" aria-label="input box 1">
+            <input type="text" aria-label="input box 2">
+            <input type="text" aria-label="input box 3">
+            <input type="text" aria-label="input box 4">
+            <input type="text" aria-label="input box 5">
         </div>
         <h3 id="correct-answer-header">Correct Answer:</h3>
         <div id="correct-answer">
-            <input type="text">
-            <input type="text">
-            <input type="text">
-            <input type="text">
-            <input type="text">
+            <input type="text" aria-label="correct number 1">
+            <input type="text" aria-label="correct number 2">
+            <input type="text" aria-label="correct number 3">
+            <input type="text" aria-label="correct number 4">
+            <input type="text" aria-label="correct number 5">
         </div>
 
         <div class="pick">
@@ -60,7 +62,7 @@
 
         </div>
         <div class="reset">
-            <button id="reset-button"><i class="fa-solid fa-rotate"></i></button>
+            <button id="reset-button"><i class="fa-solid fa-rotate"></i>Retry</button>
         </div>
     </div>
     </div>
