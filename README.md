@@ -1,7 +1,7 @@
 # EUROMILLIONS
 
 ![Am i Responsive](assets/images/Amiresponsive1.png)
-## [View Website on GitHub pages](https)
+## [View Website on GitHub pages](https://dimicoding.github.io/EUROMILLIONS/)
 
 Euromillions was first launched on February 7th, and the original participating countries were France, the UK, and Spain. This lottery game is deeply ingrained in Portuguese culture, especially in small towns like the one where I grew up.
 
@@ -241,7 +241,7 @@ To deploy the project first I had to do:
 
 To ensure that the link was up to date and running smoothly I opened the link from the nav function called "actions".
 
-The live link can be found here - 
+The live link can be found here - https://dimicoding.github.io/EUROMILLIONS/
 
 # Credits
 
