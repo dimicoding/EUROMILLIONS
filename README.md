@@ -121,16 +121,70 @@ The game was inspired on EuroMillion's phisical lottery ticket, for this reason 
 ## Features
 
 ### Header
- -Game logo with the similar family-font and a text shadow with a hover effect, lightenning to yellow colour.
 
-
-
-
-
+- Game logo with the similar family-font.
+- Text shadow with a hover effect, lightenning to yellow colour.
 
 <details><summary>ScreenShot- Title</summary>
-<img src="">
+<img src="assets/images/title.png">
 </details>
+<br>
+
+ ### Jackpot timer
+- Remining time for the jackpot happening on the Christmas eve 2023.
+- Timer is set to repeat itself after for the next christmas eve.
+- Background image serves to identify the ticket style of the lottery game.
+
+<details><summary>ScreenShot-Jackpot timer</summary>
+<img src="assets/images/timer.png">
+</details>
+<br>
+
+ ### User's Input and Correct Answer Boxes
+- Numbers picked will appear on the first input box line.
+- Limited to five numbers only.
+- One number can only be choosen once.
+- Correct Answer box:
+- Shows the correct numbers generated randomly
+- Correct numbers lighten green and incorrect ones in red
+
+<details><summary>ScreenShot-User's Input and Correct Answer Boxes</summary>
+<img src="assets/images/input-boxes.png">
+</details>
+<br>
+
+ ### Numbers
+- 5 buttons can be picked out of the total of 50.
+- Numbers picked by the user will turn active with the yellow color.
+
+<details><summary>ScreenShot-Numbers</summary>
+<img src="assets/images/numbers.png">
+</details>
+<br>
+
+ ### Submit and Retry Buttons
+- Submit button, named: "Try My Luck!", compares the user's input with randomly generated 5 numbers.
+- Retry button, clears out the user's numbers and the correct answer. Allowing the user to restar a new try.
+
+<details><summary>ScreenShot-Submit and Retry Buttons</summary>
+<img src="assets/images/submit-retry.png">
+</details>
+<br>
+
+# Testing
+
+## Validator Testing
+
+### Lighthouse
+The google lighthouse testing in chrome developer tools shows:
+- Lowest score represents the performance parameter with 74%.
+- Accessibility, Best Practices and SEO scores ranging the higehts scores.
+
+<details><summary>ScreenShot-Lighthouse</summary>
+<img src="assets/images/lighthouse.png">
+</details>
+<br>
 
 
-
+credits
+https://icons8.com/icons/set/favicon-star
