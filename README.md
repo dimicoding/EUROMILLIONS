@@ -118,6 +118,15 @@ The game was inspired on EuroMillion's phisical lottery ticket, for this reason 
 - W3C Markup validation service
 - W3C Jigsaw CSS validation service 
 
+## Features
+
+### Header
+ -Game logo with the similar family-font and a text shadow with a hover effect, lightenning to yellow colour.
+
+
+
+
+
 
 <details><summary>ScreenShot- Title</summary>
 <img src="">
