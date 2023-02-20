@@ -93,7 +93,7 @@ The game was inspired by EuroMillion's physical lottery ticket, for this reason,
 - Colours were obtained from the above picture using the image color picker.  [(View website)](https://imagecolorpicker.com/)
 - From the dark blue background and harm yellow star hex colors were created as a color palette.
 ## Fonts
--The fonts used are meant to match the original fonts of the lottery's as closely as possible.
+- The fonts used are meant to match the original fonts of the lottery's as closely as possible.
 
 ## Structure
 - The structure was designed so that it would appear in the center on different devices.
