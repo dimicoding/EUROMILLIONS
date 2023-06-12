@@ -101,13 +101,6 @@ function showCorrectAnswer() {
 submitButton.addEventListener('click', showCorrectAnswer);
 
 
-//Add number of attempts for every trial to increment.
-function incrementAttempts() {
-    let numberAttempts = parseInt(document.getElementById("attempts").innerText);
-    document.getElementById("attempts").innerText = ++oldScore;
-}
-
-
 let reset= document.getElementById("reset-button");
 reset.addEventListener('click', function() {
 
