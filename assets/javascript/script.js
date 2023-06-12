@@ -1,4 +1,4 @@
-alert("Welcome to Euromillions!\nTo test your odds is very simple:\n *   Pick your 5 lucky numbers from 1-50;\n *   'Click' on the submit button;\n *   'Click' on retry to start over;\nDon't give up! You're almost a millionaire...")
+alert("Welcome to Euromillions!\nTo test your odds is very simple:\n *   Pick your 5 lucky numbers from 1-50;\n *   'Click' on the submit button;\n *   'Click' on retry to start over;\nDon't give up! You're almost a millionaire...");
 
 
 /*Create 50 buttons for html*/
@@ -85,7 +85,7 @@ function showCorrectAnswer() {
 
         if (selectedNumber === correct[i]) {
             outcome += '<input style="background-color: mediumseagreen" value="' + selectedNumber + '">';
-            alert(`Congratulations! You've got the number ${selectedNumber} rigth!` )
+            alert(`Congratulations! You've got the number ${selectedNumber} rigth!` );
         } else {
             outcome += '<input style="background-color: indianred" value="' + selectedNumber + '">';
         } 
@@ -97,7 +97,7 @@ function showCorrectAnswer() {
     
     
     userInputElement.innerHTML += outcome;
-};
+}
 submitButton.addEventListener('click', showCorrectAnswer);
 
 
