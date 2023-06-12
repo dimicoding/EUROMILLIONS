@@ -61,7 +61,7 @@ body {
     flex-direction: column;
     align-content: center;
     margin: 0 25% 0 25%;
-    border-radius: 5px;
+    border-radius: 5px 5px 0 0;
 }
 #day{
     color: #000000;
@@ -192,8 +192,8 @@ body {
     flex-direction: column;
     align-content: center;
     margin: 0 25% 0 25%;
-    background: #ffffff;
-    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 0 0 5px 5px;
 }
 
 .pick h2 {
@@ -288,6 +288,7 @@ div .picktwo {
     background-color: unset;
     cursor: pointer;
     color: #806956;
+    margin: 15px 0px;
 }
 #reset-button:hover{
     color: rgba(202, 162, 70, 0.7);
