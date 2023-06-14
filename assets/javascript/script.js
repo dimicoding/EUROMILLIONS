@@ -58,26 +58,19 @@ submitButton.addEventListener('click', function () {
     }
 
     if (allFilled) {
-        showCorrectAnswer();
-
-        // Disable the submit button after checking the answer
-        submitButton.disabled = true;
-
         // Rest of the code to generate random numbers
         for (let i = 0; i < correctAnswer.length; i++) {
             correctAnswer[i].value = "";
         }
 
-        let randomNumbers = [];
-        while (randomNumbers.length < 5) {
-            let randomNumber = Math.floor(Math.random() * 50) + 1;
-            if (!randomNumbers.includes(randomNumber)) {
-                randomNumbers.push(randomNumber);
-            }
-        }
+        let randomNumbers = generateRandomNumbers(5, 50);
         for (let i = 0; i < correctAnswer.length; i++) {
             correctAnswer[i].value = randomNumbers[i];
         }
+
+        showCorrectAnswer(randomNumbers);
+        // Disable the submit button after checking the answer
+        submitButton.disabled = true;
     }
 });
 
@@ -86,14 +79,9 @@ submitButton.addEventListener('click', function () {
  * Compare random number value with user's input
  * Make the function work after the user clicks on the button
  */
-function showCorrectAnswer() {
+function showCorrectAnswer(randomNumbers) {
     let userAnswer = document.querySelectorAll('#user-input input');
     let allValid = true;
-
-    let correct = [];
-    for (let i = 0; i < correctAnswer.length; i++) {
-        correct.push(parseInt(correctAnswer[i].value));
-    }
 
     let outcome = "";
     let correctGuesses = [];
@@ -107,10 +95,10 @@ function showCorrectAnswer() {
             continue;
         }
 
-        if (selectedNumber === correct[i]) {
+        if (randomNumbers.includes(selectedNumber)) {
             outcome += '<input style="background-color: mediumseagreen" value="' + selectedNumber + '">';
             alert(`Congratulations! You've got the number ${selectedNumber} right!`);
-            correctGuesses.push(i);
+            correctGuesses.push(selectedNumber);
         } else {
             outcome += '<input style="background-color: indianred" value="' + selectedNumber + '">';
         }
@@ -129,17 +117,12 @@ function showCorrectAnswer() {
 
     // Highlight correct guesses in green
     for (let i = 0; i < correctGuesses.length; i++) {
-        userAnswer[correctGuesses[i]].style.backgroundColor = "mediumseagreen";
-    }
-
-    let userInputElement = document.getElementById("user-input");
-    userInputElement.innerHTML = '';
-
-    userInputElement.innerHTML += outcome;
-
-    // Clear correct answer boxes after submit button is clicked
-    for (let i = 0; i < correctAnswer.length; i++) {
-        correctAnswer[i].value = "";
+        for (let j = 0; j < userAnswer.length; j++) {
+            let selectedNumber = parseInt(userAnswer[j].value);
+            if (selectedNumber === correctGuesses[i]) {
+                userAnswer[j].style.backgroundColor = "mediumseagreen";
+            }
+        }
     }
 }
 
@@ -164,6 +147,18 @@ reset.addEventListener('click', function () {
     // Enable the submit button after resetting the game
     submitButton.disabled = false;
 });
+
+function generateRandomNumbers(count, max) {
+    let randomNumbers = [];
+    while (randomNumbers.length < count) {
+        let randomNumber = Math.floor(Math.random() * max) + 1;
+        if (!randomNumbers.includes(randomNumber)) {
+            randomNumbers.push(randomNumber);
+        }
+    }
+    return randomNumbers;
+}
+
 
 
 
