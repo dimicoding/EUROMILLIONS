@@ -60,6 +60,9 @@ submitButton.addEventListener('click', function () {
     if (allFilled) {
         showCorrectAnswer();
 
+        // Disable the submit button after checking the answer
+        submitButton.disabled = true;
+
         // Rest of the code to generate random numbers
         for (let i = 0; i < correctAnswer.length; i++) {
             correctAnswer[i].value = "";
@@ -93,6 +96,7 @@ function showCorrectAnswer() {
     }
 
     let outcome = "";
+    let correctGuesses = [];
     for (let i = 0; i < userAnswer.length; i++) {
         let selectedNumber = parseInt(userAnswer[i].value);
 
@@ -106,6 +110,7 @@ function showCorrectAnswer() {
         if (selectedNumber === correct[i]) {
             outcome += '<input style="background-color: mediumseagreen" value="' + selectedNumber + '">';
             alert(`Congratulations! You've got the number ${selectedNumber} right!`);
+            correctGuesses.push(i);
         } else {
             outcome += '<input style="background-color: indianred" value="' + selectedNumber + '">';
         }
@@ -121,6 +126,11 @@ function showCorrectAnswer() {
     }
 
     document.getElementById("user-input").innerHTML = outcome;
+
+    // Highlight correct guesses in green
+    for (let i = 0; i < correctGuesses.length; i++) {
+        userAnswer[correctGuesses[i]].style.backgroundColor = "mediumseagreen";
+    }
 
     let userInputElement = document.getElementById("user-input");
     userInputElement.innerHTML = '';
@@ -150,7 +160,11 @@ reset.addEventListener('click', function () {
     for (let i = 0; i < correctAnswer.length; i++) {
         correctAnswer[i].value = "";
     }
+
+    // Enable the submit button after resetting the game
+    submitButton.disabled = false;
 });
+
 
 
 /* Create a countdown reverse clock "jackpot" updating every week */
