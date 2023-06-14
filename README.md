@@ -1,6 +1,6 @@
 # EUROMILLIONS
 
-![Am i Responsive](assets/images/Amiresponsive1.png)
+![Am i Responsive](assets/images/euromillions.png)
 ## [View Website on GitHub pages](https://dimicoding.github.io/EUROMILLIONS/)
 
 Euromillions was first launched on February 7th, and the original participating countries were France, the UK, and Spain. This lottery game is deeply ingrained in Portuguese culture, especially in small towns like the one where I grew up.
