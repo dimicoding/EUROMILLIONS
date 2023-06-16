@@ -44,6 +44,7 @@ Nevertheless, the dream of becoming a millionaire is still a powerful draw for m
     -[Responsiveness](#responsiveness)
 - [Fixed Bugs](#fixed-bugs)
 - [Deployment](#deployment)
+- [Ressubmission Changes](#ressubmission-changes)
 - [Credits](#credits)
 - [Acknowledgments](#acknowledgements)
     
@@ -242,6 +243,14 @@ To deploy the project first I had to do:
 To ensure that the link was up to date and running smoothly I opened the link from the nav function called "actions".
 
 The live link can be found here - https://dimicoding.github.io/EUROMILLIONS/
+
+# Ressubmission Changes
+
+- Rules/ Instructions added to the main page of the site within the toggle button "How to play?".
+- Add form validation to not allow the user to press the "Try my Luck" button before all the numbers are filled.
+- Highlight the correct number in green color regardless of its position.
+- Change the name of the file from "java" to javascript.
+- Correct answer displayed on the first run.
 
 # Credits
 
