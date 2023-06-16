@@ -169,7 +169,7 @@ let minutes = document.getElementById("minute");
 let seconds = document.getElementById("second");
 
 let jackpot = new Date("2023-12-24").getTime();
-let reverse = setInterval(() => {
+setInterval(() => {
     let now = new Date().getTime();
     let timeLeft = jackpot - now;
 
